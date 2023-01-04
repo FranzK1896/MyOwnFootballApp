@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hellgreen"
+    tools:context=".SignInOut.SignInActivity"
+    tools:layout_editor_absoluteX="32dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="301dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginBottom="35dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint=" E-Mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="311dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="302dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="376dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:layout_centerVertical="true"
+       android:hint="Enter Passwort"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+
+    <Button
+        android:id="@+id/ForgotPasswortBtn"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:text="Forgot Passwort"
+        android:textColor="@color/black"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="40dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:theme="@style/Theme.AppCompat.Light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ForgotPasswortBtn"
+        app:layout_constraintVertical_bias="0.532" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="302dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:text="YOUR FOOTBALL APP"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="editTextTextEmailAddress2,editTextTextPassword2"
+        tools:layout_editor_absoluteY="223dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

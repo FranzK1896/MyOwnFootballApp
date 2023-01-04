@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">NewEngland</string>
+    <string name="button_addFriend">Add Friend</string>
+    <string name="Friend">Friend</string>
+    <string name="hint_placemarkDescription">Description </string>
+    <string name="menu_addPlacemark">Add</string>
+    <string name="menu_cancelPlacemark">Cancel</string>
+
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="AddFriend">Add Friend</string>
+    <string name="save_friend">Add Friend</string>
+    <string name="enter_friendfirstName_title"> Please enter a FirstName </string>
+    <string name="menu_deleteFriend">Delete</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="Club">Club</string>
+    <string name="Profil">Profil</string>
+    <string name="Ausloggen">Forum</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="Footballclubs">Sample</string>
+    <string-array name="Clubs">
+        <item>New England Patriots</item>
+        <item>Green Bay Packers</item>
+        <item>New York Jets</item>
+        <item>New York Giants</item>
+        <item>Minnesota Vikings</item>
+    </string-array>
+</resources>

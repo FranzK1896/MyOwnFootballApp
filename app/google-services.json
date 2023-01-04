@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "445068950342",
+    "project_id": "myfootballapp-f2338",
+    "storage_bucket": "myfootballapp-f2338.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445068950342:android:750f743a031bc6fc3b4347",
+        "android_client_info": {
+          "package_name": "com.example.myfootballapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445068950342-sl41rsfuimp6f17be48t8o77ptk1q0hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMpqtCXyNLlB_BmCr7b1r_FoTWRaETzPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445068950342-sl41rsfuimp6f17be48t8o77ptk1q0hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445068950342:android:927a9f7925297d643b4347",
+        "android_client_info": {
+          "package_name": "com.example.newengland"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445068950342-sl41rsfuimp6f17be48t8o77ptk1q0hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMpqtCXyNLlB_BmCr7b1r_FoTWRaETzPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445068950342-sl41rsfuimp6f17be48t8o77ptk1q0hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ProfilItem"
+        android:title="Profil"
+        />
+    <item
+        android:id="@+id/ClubItem"
+        android:title="Club"
+        />
+
+    <item
+        android:id="@+id/HighlightItem"
+        android:title="Email"
+        />
+    <item
+        android:id="@+id/FriendsList"
+        android:title="FriendsList"
+        />
+    <item
+        android:id="@+id/PlanEvents"
+        android:title="Plan Events"
+        />
+    <item
+        android:id="@+id/AusloggItem"
+        android:title="Ausloggen"
+        />
+
+</menu>
