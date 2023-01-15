@@ -37,6 +37,7 @@ class Club : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 android.R.layout.simple_spinner_item
             ).also { adapter ->
 
+
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
                 spinner1.adapter = adapter
