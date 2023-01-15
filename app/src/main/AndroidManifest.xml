@@ -92,7 +92,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".UserPages.UserPage.Forum"
+            android:name=".UserPages.UserPage.SignOut"
             android:exported="false"
             android:parentActivityName=".UserPages.UserPage.UserStart">
             <meta-data

@@ -74,7 +74,7 @@ class UserStart : AppCompatActivity() {
                     }
                     R.id.AusloggItem->
                     {
-                        val intent = Intent(this@UserStart, Forum::class.java)
+                        val intent = Intent(this@UserStart, SignOut::class.java)
                         startActivity(intent)
                     }
                     R.id.HighlightItem->
