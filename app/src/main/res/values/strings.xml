@@ -31,10 +31,15 @@
 
     <string name="Footballclubs">Sample</string>
     <string-array name="Clubs">
+        <item>Miami Dolphins</item>
         <item>New England Patriots</item>
-        <item>Green Bay Packers</item>
+        <item>Buffalo Bills</item>
         <item>New York Jets</item>
         <item>New York Giants</item>
         <item>Minnesota Vikings</item>
+
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps1">maps</string>
+    <string name="select_user_image">select_user_image</string>
 </resources>

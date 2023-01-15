@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import com.example.newengland.MapsActivity
 import com.example.newengland.R
 import com.example.newengland.SendMessage
 import com.example.newengland.UserPages.Friend.FriendListActivity
@@ -91,6 +92,12 @@ class UserStart : AppCompatActivity() {
                         val intent = Intent(this@UserStart, SetEvent::class.java)
                         startActivity(intent)
                     }
+                    R.id.map->
+                    {
+                        val intent = Intent(this@UserStart, MapsActivity::class.java)
+                        startActivity(intent)
+                    }
+
                 }
                 true
 

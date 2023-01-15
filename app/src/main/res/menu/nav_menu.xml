@@ -23,8 +23,13 @@
         android:title="Plan Events"
         />
     <item
+        android:id="@+id/map"
+        android:title="MAP"
+        />
+    <item
         android:id="@+id/AusloggItem"
         android:title="Ausloggen"
         />
+
 
 </menu>

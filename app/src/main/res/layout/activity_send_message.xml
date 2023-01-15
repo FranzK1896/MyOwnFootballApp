@@ -4,22 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:background = "@drawable/ticket"
     tools:context=".SendMessage">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:background="#008080"
-        android:padding="5dp"
-        android:text="TutorialsPoint"
-        android:textColor="#fff"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+
     <Button
-        android:layout_centerInParent="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:layout_width="150dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="155dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/cardview_dark_background"
         android:onClick="sendHtmlEmail"
-        android:text="Send HTML Email" />
+        android:text="Contact your Team" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="416dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginTop="351dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/umrandung"
+        android:scrollbarSize="20dp"
+        android:textSize="30sp" />
+
+
 </RelativeLayout>

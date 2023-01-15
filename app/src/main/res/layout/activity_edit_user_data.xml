@@ -4,78 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_baseline_sports_football_24"
+    android:background="@drawable/profil"
     tools:context=".UserPages.UserPage.Profil_Activity">
+
 
     <EditText
         android:id="@+id/editTextVorname"
-        android:layout_width="386dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="282dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="180dp"
         android:ems="10"
         android:gravity="center"
         android:hint="FirstName"
         android:inputType="textPersonName"
         android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNachname"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextNachname"
-        android:layout_width="392dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="295dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="288dp"
         android:ems="10"
         android:gravity="center"
         android:hint="LastName"
         android:inputType="textPersonName"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextVorname" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="390dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="275dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="72dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="email"
         android:inputType="textPersonName"
         android:textSize="25sp"
-        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNachname" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNachname"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextfavoriteClub"
-        android:layout_width="375dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
+        android:gravity="center"
         android:hint="Favoriteclub"
         android:inputType="textPersonName"
         android:textSize="25sp"
-        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
-
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintVertical_bias="0.074" />
 
     <Button
         android:id="@+id/UpdateDataButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="128dp"
-        android:text="UpdateDataButton"
+        android:layout_marginBottom="36dp"
         android:gravity="center"
+        android:text="UpdateDataButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextfavoriteClub"
         app:layout_constraintVertical_bias="1.0" />
@@ -86,6 +94,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextVorname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/foto_k_rzinger_franz" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

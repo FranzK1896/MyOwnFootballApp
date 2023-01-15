@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.newengland.R
 import com.example.newengland.Model.UserModel
 import com.example.newengland.databinding.ActivitySignUpBinding
+import com.example.newengland.main.MainApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -19,7 +20,7 @@ class SignUpActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var firebaseAuth: FirebaseAuth
-
+    private lateinit var app: MainApp
 
     lateinit var database: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,14 +29,15 @@ class SignUpActivity : AppCompatActivity() {
 
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
- //Initialsieren Firebase Auth
+
     firebaseAuth =FirebaseAuth.getInstance()
 
 
-
+        app = application as MainApp
 
     binding.buttonRegisterUser.setOnClickListener()
     {
+
 
         val email= binding.editTextEmail.text.toString()
         val pass= binding.editPasswort.text.toString()
@@ -45,16 +47,6 @@ class SignUpActivity : AppCompatActivity() {
         val favoriteClub =binding.editFavoriteClub.text.toString()
 
 
-        database =
-            FirebaseDatabase.getInstance("https://myfootballapp-f2338-default-rtdb.europe-west1.firebasedatabase.app")
-                .getReference()
-
-         val androidId: String =
-        Settings.Secure.getString(contentResolver, Settings.Secure.ANDROID_ID)
-
-
-        database.child("User").child(androidId)
-            .setValue(UserModel( firstName, lastName, email, favoriteClub))
 
         if(email.isNotEmpty() &&pass.isNotEmpty()&& confirmPasswort.isNotEmpty())
         {
@@ -65,8 +57,21 @@ class SignUpActivity : AppCompatActivity() {
                 if(it.isSuccessful)
                 {
                     Toast.makeText(this, "Datenübertragen was sucessfull", Toast.LENGTH_SHORT).show()
+                    database =
+                        FirebaseDatabase.getInstance("https://myfootballapp-f2338-default-rtdb.europe-west1.firebasedatabase.app")
+                            .getReference()
+
+
+
+
+                    var uid =firebaseAuth.currentUser?.uid
+
+                    app.userID = uid.toString()
+                    database.child("User").child(uid.toString())
+                        .setValue(UserModel( firstName, lastName, email, favoriteClub))
                     val intent = Intent(this, SignInActivity::class.java)
                     startActivity(intent)
+
                 }else
                 {
                     Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
