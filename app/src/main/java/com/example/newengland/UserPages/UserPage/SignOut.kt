@@ -26,7 +26,10 @@ class SignOut : AppCompatActivity() {
             actionBar?.setDisplayHomeAsUpEnabled(true)
 
 
-
+            auth = Firebase.auth
+            Firebase.auth.signOut()
+            val intent = Intent(this, SignInActivity::class.java)
+            startActivity(intent)
             }
         }
 
