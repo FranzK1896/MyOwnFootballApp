@@ -30,6 +30,7 @@ class SignOut : AppCompatActivity() {
             Firebase.auth.signOut()
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
+
             }
         }
 
