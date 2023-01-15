@@ -73,6 +73,7 @@ class Club : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                         else if(selectedItem == "Minnesota Vikings")
                         {
                             Club2 = "Minnesota Vikings"
+
                         }
 
                     }

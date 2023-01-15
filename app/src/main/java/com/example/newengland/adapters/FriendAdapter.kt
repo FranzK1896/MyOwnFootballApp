@@ -43,7 +43,7 @@ class FriendAdapter constructor(private var friends: List<FriendModel>,
             binding.VornameTitle.text = friend.firstName
             binding.description.text = friend.email
             binding.favClub.text =friend.favoriteClub
-            
+
 
 
 
