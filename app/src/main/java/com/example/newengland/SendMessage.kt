@@ -20,7 +20,7 @@ class SendMessage : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         super.onCreate(savedInstanceState)
 
         binding = ActivitySendMessageBinding.inflate(layoutInflater)
-setContentView(binding.root)
+        setContentView(binding.root)
         title = "Ticketstore"
 
 
