@@ -9,8 +9,6 @@ import android.widget.Spinner
 import android.widget.TextView
 import com.example.newengland.R
 import com.example.newengland.databinding.ActivityClubBinding
-import com.example.newengland.databinding.ActivityEditUserDataBinding
-import com.example.newengland.databinding.ActivitySendMessageBinding
 import java.util.*
 
 class Club : AppCompatActivity(), AdapterView.OnItemSelectedListener {
@@ -92,9 +90,7 @@ class Club : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
                     spinner2.adapter = adapter
-                    val spinner: Spinner = findViewById(R.id.spinner2)
                     spinner2.onItemSelectedListener = this
-
                     spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                         override fun onItemSelected(
                             parent: AdapterView<*>,

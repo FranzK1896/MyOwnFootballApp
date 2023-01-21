@@ -50,23 +50,18 @@ class Profil_Activity : AppCompatActivity() {
 
         binding = ActivityProfilBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        getData()
-
         binding.EditButton.setOnClickListener()
         {
             val intent = Intent(this, EditUserData::class.java)
             startActivity(intent)
         }
 
-
         binding.imageView.setOnClickListener() {
 
             showImagePicker(imageIntentLauncher, this)
 
         }
-
         registerImagePickerCallback()
-
     }
 
     private fun readFirstName(database: DatabaseReference, uid: String) {
@@ -122,39 +117,7 @@ class Profil_Activity : AppCompatActivity() {
             }
     }
 
-    private fun getData() {
 
-  /*      database =
-            FirebaseDatabase.getInstance("https://myfootballapp-f2338-default-rtdb.europe-west1.firebasedatabase.app")
-                .getReference().child("User")
-        var uid = app.userID
-        println(uid)
-        database.child("fmIImrVGJFcKArn4OwQQJ8MPuKY2").get().addOnSuccessListener {
-
-
-            val firstName = database.child("firstName").get
-            println(firstName)
-                    val vorName= it.child("vorName").value.toString()
-                    /*val firstName = snapshot.child("firstName").getValue(String::class.java)
-                    val lastName = snapshot.child("lastName").getValue(String::class.java)
-                    val favoriteClub = snapshot.child("favoriteClub").getValue(String::class.java)
-                    val email = snapshot.child("email").getValue(String::class.java)*/
-
-                //    binding.editTextEmail.text = email
-                    binding.editTextVorname.text = firstName as CharSequence?
-               //     binding.editTextNachname.text = lastName
-                 //   binding.editTextfavoriteClub.text = favoriteClub
-
-                }*/
-
-
-
-
-
-
-
-
-    }
 }
 
 
