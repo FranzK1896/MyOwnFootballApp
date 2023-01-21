@@ -39,12 +39,6 @@ class SetEvent : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 Log.e("oooo", "onDataChange: $snapshot")
 
-
-
-
-
-
-
                 val currentDate = Calendar.getInstance()
 
                 val dateFormat = SimpleDateFormat("yyyy-MM-dd")
@@ -83,14 +77,6 @@ class SetEvent : AppCompatActivity() {
 
         })
 
-
-
-
-
     }
-}
-
-private fun Calendar.setTime(dateFromFirebase1: String?) {
-
 }
 
