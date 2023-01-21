@@ -50,7 +50,7 @@ class SetEvent : AppCompatActivity() {
                 val dateFormat = SimpleDateFormat("yyyy-MM-dd")
 
                 val dateString = snapshot.child("Wildcard").getValue(String::class.java)
-               val parsedDateWildcard = dateFormat.parse(dateString)
+                val parsedDateWildcard = dateFormat.parse(dateString)
                 val diffWC = parsedDateWildcard.time - currentDate.timeInMillis
                 val diffDaysWildcard = diffWC / (24 * 60 * 60 * 1000)
 
@@ -87,8 +87,8 @@ class SetEvent : AppCompatActivity() {
 
 
 
-        }
     }
+}
 
 private fun Calendar.setTime(dateFromFirebase1: String?) {
 

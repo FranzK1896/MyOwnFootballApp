@@ -21,7 +21,7 @@ fun generateRandomId(): Long {
     return Random().nextLong()
 }
 
-class PlacemarkJSONStore(private val context: Context) : FriendStore {
+class FriendJSONStore(private val context: Context) : FriendStore {
 
     var friends = mutableListOf<FriendModel>()
 

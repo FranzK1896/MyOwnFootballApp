@@ -5,29 +5,17 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.Settings
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
-import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.newengland.Model.FriendModel
-import com.example.newengland.Model.UserModel
 import com.example.newengland.R
-
-import com.example.newengland.UserPages.UserPage.UserStart
 import com.example.newengland.adapters.FriendAdapter
-
-
 import com.example.newengland.adapters.friendListener
-
 import com.example.newengland.databinding.ActivityFriendListBinding
-import com.example.newengland.databinding.CardPlacemarkBinding
 import com.example.newengland.main.MainApp
-import com.google.firebase.database.*
+
 
 
 class FriendListActivity : AppCompatActivity(), friendListener {

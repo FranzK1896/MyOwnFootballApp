@@ -25,6 +25,7 @@ class UserStart : AppCompatActivity() {
         binding=ActivityUserstartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         val randomNumber = generateRandomNumber(1, 4)
         database =
             FirebaseDatabase.getInstance("https://myfootballapp-f2338-default-rtdb.europe-west1.firebasedatabase.app")
@@ -74,7 +75,7 @@ class UserStart : AppCompatActivity() {
                     }
                     R.id.AusloggItem->
                     {
-                        val intent = Intent(this@UserStart, Forum::class.java)
+                        val intent = Intent(this@UserStart, SignOut::class.java)
                         startActivity(intent)
                     }
                     R.id.HighlightItem->

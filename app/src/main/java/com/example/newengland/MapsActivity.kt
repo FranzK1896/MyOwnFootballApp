@@ -20,7 +20,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
     private var markerList = mutableListOf<Marker>()
-  lateinit var app: MainApp
+    lateinit var app: MainApp
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val actionBar = supportActionBar
@@ -33,7 +33,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-       app = application as MainApp
+        app = application as MainApp
         this.markerList = app.markerList
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
