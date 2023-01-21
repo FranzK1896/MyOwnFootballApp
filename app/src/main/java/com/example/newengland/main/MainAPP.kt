@@ -1,7 +1,7 @@
 package com.example.newengland.main
 
 import android.app.Application
-import com.example.newengland.Model.PlacemarkJSONStore
+import com.example.newengland.Model.FriendJSONStore
 import com.example.newengland.Model.FriendStore
 import com.example.newengland.databinding.ActivitySignUpBinding
 import com.google.android.gms.maps.model.Marker
@@ -18,7 +18,7 @@ class MainApp : Application() {
 
         super.onCreate()
         Timber.plant(Timber.DebugTree())
-        usermodels = PlacemarkJSONStore(applicationContext)
+        usermodels = FriendJSONStore(applicationContext)
 
 
 

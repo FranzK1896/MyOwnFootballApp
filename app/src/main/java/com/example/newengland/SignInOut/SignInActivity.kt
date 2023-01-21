@@ -1,11 +1,11 @@
 package com.example.newengland.SignInOut
 
-import android.app.Application
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.newengland.Model.UserModel
+
 import com.example.newengland.UserPages.UserPage.UserStart
 import com.example.newengland.databinding.ActivitySignInBinding
 import com.example.newengland.main.MainApp
