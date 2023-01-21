@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.example.newengland.MapsActivity
 import com.example.newengland.R
-import com.example.newengland.SendMessage
 import com.example.newengland.UserPages.Friend.FriendListActivity
 
 import com.example.newengland.databinding.ActivityUserstartBinding
