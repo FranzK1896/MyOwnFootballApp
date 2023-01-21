@@ -1,4 +1,4 @@
-package com.example.newengland
+package com.example.newengland.UserPages.UserPage
 
 import android.content.Intent
 import android.net.Uri
@@ -9,6 +9,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import com.example.newengland.R
 import com.example.newengland.databinding.ActivitySendMessageBinding
 
 

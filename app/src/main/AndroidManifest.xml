@@ -40,12 +40,12 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".UserPages.UserPage.MapsActivity"
             android:exported="false"
             android:parentActivityName=".UserPages.UserPage.UserStart"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".SendMessage"
+            android:name=".UserPages.UserPage.SendMessage"
             android:exported="false"
             android:parentActivityName=".UserPages.UserPage.UserStart">
             <meta-data

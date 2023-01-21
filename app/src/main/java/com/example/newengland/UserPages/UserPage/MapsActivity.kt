@@ -1,9 +1,10 @@
-package com.example.newengland
+package com.example.newengland.UserPages.UserPage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import com.example.newengland.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap

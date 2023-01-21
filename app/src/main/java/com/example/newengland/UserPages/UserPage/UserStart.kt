@@ -1,19 +1,19 @@
 package com.example.newengland.UserPages.UserPage
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.Button
 import androidx.appcompat.app.ActionBarDrawerToggle
-import com.example.newengland.MapsActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.newengland.R
-import com.example.newengland.SendMessage
 import com.example.newengland.UserPages.Friend.FriendListActivity
-
 import com.example.newengland.databinding.ActivityUserstartBinding
 import com.google.firebase.database.*
 import kotlin.random.Random
+
 
 class UserStart : AppCompatActivity() {
     lateinit var binding: ActivityUserstartBinding
@@ -25,7 +25,7 @@ class UserStart : AppCompatActivity() {
         binding=ActivityUserstartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+       val nightModeButton = findViewById<Button>(R.id.Nightmode_button)
         val randomNumber = generateRandomNumber(1, 4)
         database =
             FirebaseDatabase.getInstance("https://myfootballapp-f2338-default-rtdb.europe-west1.firebasedatabase.app")
@@ -106,7 +106,21 @@ class UserStart : AppCompatActivity() {
             }
 
         }
+        nightModeButton.setOnClickListener {
+            val isNightMode =
+                AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES
+            setNightMode(!isNightMode)
+        }
+
+
     }
+    private fun setNightMode(nightMode: Boolean) {
+        AppCompatDelegate.setDefaultNightMode(if (nightMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO)
+        recreate()
+    }
+
+
+
 
     private fun generateRandomNumber(min: Int, max: Int): Int {
             val rand = Random
